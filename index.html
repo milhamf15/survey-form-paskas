@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paskas Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1 id="title">Survey Paskas Form</h1>
+    <p id="description">Jangan lupa sebelum ngisi bismillah dulu :)</p>
+
+    <form id="survey-form">
+        <label for="name" id="name-label">
+            Nama
+            <input type="text" id="name" placeholder="Masukan namamu" required />
+        </label>
+
+        <label for="email" id="email-label">
+            Email
+            <input type="email" id="email" placeholder="Masukan emailmu" required />
+        </label>
+
+        <label for="number" id="number-label">
+            Umur
+            <input type="number" id="number" min="15" max="99" placeholder="Umur minimal 15 tahun" />
+        </label>
+
+        <label for="dropdown" id="dropdown-label">
+            Dari mana tau Paskas?
+            <select id="dropdown">
+                <option>Instagram</option>
+                <option>Teman/Kerabat/Keluarga</option>
+            </select>
+        </label>
+
+        <br>
+        <label for="kegiatan" id="kegiatan-label">
+            Kegiatan favorit selama di Paskas?
+        </label>
+        <br><br>
+
+        <input type="radio" name="kegiatan" Value="1" checked /> Distribusi Beras <br>
+        <input type="radio" name="kegiatan" Value="2" /> Hadiah Untuk Muslimah <br>
+        <input type="radio" name="kegiatan" Value="3" /> Jum'at Bahagia <br>
+        <input type="radio" name="kegiatan" Value="4" /> Jum'at Ganteng <br>
+
+        <br><br>
+        <label for="berkesan id=" berkesan-label>
+            Hal yang paling berkesan selama bergabung?
+        </label>
+        <br><br>
+
+        <input type="checkbox" name="kegiatan" checked value="Halal Bihalal" /> Halal Bihalal <br>
+        <input type="checkbox" name="kegiatan" value="Kajian TGIF" /> Kajian TGIF <br>
+        <input type="checkbox" name="kegiatan" value="Distribusi ke Pondok" /> Distribusi ke Pondok <br>
+        <input type="checkbox" name="kegiatan" value="Hadiah Untuk Muslimah" /> Hadiah Untuk Muslimah <br>
+
+        <br>
+        <label for="umur" id="usia-label">
+            Ada saran atau kritik? <br><br>
+            <textarea id="comment" cols="30" rows="10"></textarea>
+        </label>
+        <br>
+
+        <button id="submit" type="submit">
+            Submit
+        </button>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
